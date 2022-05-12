@@ -11,18 +11,18 @@
  * or xyw patches, to make the menu stand out from similarly coloured windows.
  * http://tools.suckless.org/dmenu/patches/border/
  */
-#define BORDER_PATCH 0
+#define BORDER_PATCH 1
 
 /* This patch makes dmenu case-insensitive by default, replacing the
  * case-insensitive -i option with a case sensitive -s option.
  * http://tools.suckless.org/dmenu/patches/case-insensitive/
  */
-#define CASEINSENSITIVE_PATCH 0
+#define CASEINSENSITIVE_PATCH 1
 
 /* This patch centers dmenu in the middle of the screen.
  * https://tools.suckless.org/dmenu/patches/center/
  */
-#define CENTER_PATCH 0
+#define CENTER_PATCH 1
 
 /* This patch enables color emoji in dmenu by removing a workaround for a BadLength error
  * in the Xft library when color glyphs are used.
@@ -35,7 +35,7 @@
 /* Minor patch to enable the use of Ctrl+v (XA_PRIMARY) and Ctrl+Shift+v (CLIPBOARD) to paste.
  * By default dmenu only supports Ctrl+y and Ctrl+Shift+y to paste.
  */
-#define CTRL_V_TO_PASTE_PATCH 0
+#define CTRL_V_TO_PASTE_PATCH 1
 
 /* This patch adds a flag (-dy) which makes dmenu run the command given to it whenever input
  * is changed with the current input as the last argument and update the option list according
@@ -57,13 +57,13 @@
  * to be used together with the fuzzymatch patch.
  * https://tools.suckless.org/dmenu/patches/fuzzyhighlight/
  */
-#define FUZZYHIGHLIGHT_PATCH 0
+#define FUZZYHIGHLIGHT_PATCH 1
 
 /* This patch adds support for fuzzy-matching to dmenu, allowing users to type non-consecutive
  * portions of the string to be matched.
  * https://tools.suckless.org/dmenu/patches/fuzzymatch/
  */
-#define FUZZYMATCH_PATCH 0
+#define FUZZYMATCH_PATCH 1
 
 /* Allows dmenu's entries to be rendered in a grid by adding a new -g flag to specify
  * the number of grid columns. The -g and -l options can be used together to create a
@@ -142,7 +142,7 @@
 /* This patch adds basic mouse support for dmenu.
  * https://tools.suckless.org/dmenu/patches/mouse-support/
  */
-#define MOUSE_SUPPORT_PATCH 0
+#define MOUSE_SUPPORT_PATCH 1
 
 /* Without this patch when you press Ctrl+Enter dmenu just outputs current item and it is not
  * possible to undo that.
@@ -189,7 +189,7 @@
 /* Adds text which displays the number of matched and total items in the top right corner of dmenu.
  * https://tools.suckless.org/dmenu/patches/numbers/
  */
-#define NUMBERS_PATCH 0
+#define NUMBERS_PATCH 1
 
 /* This patch adds simple markup for dmenu using pango markup.
  * This depends on the pango library v1.44 or greater.
@@ -241,7 +241,7 @@
 /* This patch changes the behaviour of matched items and the Tab key to allow tab completion.
  * https://tools.suckless.org/dmenu/patches/prefix-completion/
  */
-#define PREFIXCOMPLETION_PATCH 0
+#define PREFIXCOMPLETION_PATCH 1
 
 /* This patch adds an option -ps to specify an item by providing the index that should be
  * pre-selected.
@@ -306,7 +306,7 @@
 /* This patch prevents dmenu from indenting items at the same level as the prompt length.
  * https://tools.suckless.org/dmenu/patches/vertfull/
  */
-#define VERTFULL_PATCH 0
+#define VERTFULL_PATCH 1
 
 /* Adds extended window manager hints such as _NET_WM_WINDOW_TYPE and _NET_WM_WINDOW_TYPE_DOCK.
  * https://github.com/Baitinq/dmenu/blob/master/patches/dmenu-wm_type.diff
@@ -325,7 +325,7 @@
  *
  * https://tools.suckless.org/dmenu/patches/xresources/
  */
-#define XRESOURCES_PATCH 0
+#define XRESOURCES_PATCH 1
 
 /* This patch adds options for specifying dmenu window position and width.
  * The center patch takes precedence over the XYW patch if enabled.

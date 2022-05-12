@@ -31,7 +31,7 @@ static char *fonts[] =
 static const char *fonts[] =
 #endif // XRESOURCES_PATCH
 {
-	"monospace:size=10"
+	"JetBrains Mono:size=12"
 };
 #endif // PANGO_PATCH
 #if MANAGED_PATCH
