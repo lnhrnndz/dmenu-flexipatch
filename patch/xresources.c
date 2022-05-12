@@ -25,13 +25,13 @@ readxresources(void)
 			colors[SchemeNorm][ColBg] = strdup(xval.addr);
 		if (XrmGetResource(xdb, "dmenu.foreground", "*", &type, &xval))
 			colors[SchemeNorm][ColFg] = strdup(xval.addr);
-		if (XrmGetResource(xdb, "dmenu.selbackground", "*", &type, &xval))
+		if (XrmGetResource(xdb, "dmenu.color2", "*", &type, &xval))
 			colors[SchemeSel][ColBg] = strdup(xval.addr);
-		if (XrmGetResource(xdb, "dmenu.selforeground", "*", &type, &xval))
+		if (XrmGetResource(xdb, "dmenu.color0", "*", &type, &xval))
 			colors[SchemeSel][ColFg] = strdup(xval.addr);
-		if (XrmGetResource(xdb, "dmenu.outbackground", "*", &type, &xval))
+		if (XrmGetResource(xdb, "dmenu.color1", "*", &type, &xval))
 			colors[SchemeOut][ColBg] = strdup(xval.addr);
-		if (XrmGetResource(xdb, "dmenu.outforeground", "*", &type, &xval))
+		if (XrmGetResource(xdb, "dmenu.color1", "*", &type, &xval))
 			colors[SchemeOut][ColFg] = strdup(xval.addr);
 		#if MORECOLOR_PATCH
 		if (XrmGetResource(xdb, "dmenu.midbackground", "*", &type, &xval))
@@ -40,17 +40,17 @@ readxresources(void)
 			colors[SchemeMid][ColFg] = strdup(xval.addr);
 		#endif // MORECOLOR_PATCH
 		#if BORDER_PATCH
-		if (XrmGetResource(xdb, "dmenu.bordercolor", "*", &type, &xval))
+		if (XrmGetResource(xdb, "dmenu.color3", "*", &type, &xval))
 			colors[SchemeBorder][ColBg] = strdup(xval.addr);
 		#endif // BORDER_PATCH
 		#if HIGHLIGHT_PATCH || FUZZYHIGHLIGHT_PATCH
-		if (XrmGetResource(xdb, "dmenu.selhlbackground", "*", &type, &xval))
+		if (XrmGetResource(xdb, "dmenu.color10", "*", &type, &xval))
 			colors[SchemeSelHighlight][ColBg] = strdup(xval.addr);
-		if (XrmGetResource(xdb, "dmenu.selhlforeground", "*", &type, &xval))
+		if (XrmGetResource(xdb, "dmenu.color0", "*", &type, &xval))
 			colors[SchemeSelHighlight][ColFg] = strdup(xval.addr);
-		if (XrmGetResource(xdb, "dmenu.hlbackground", "*", &type, &xval))
+		if (XrmGetResource(xdb, "dmenu.background", "*", &type, &xval))
 			colors[SchemeNormHighlight][ColBg] = strdup(xval.addr);
-		if (XrmGetResource(xdb, "dmenu.hlforeground", "*", &type, &xval))
+		if (XrmGetResource(xdb, "dmenu.foreground", "*", &type, &xval))
 			colors[SchemeNormHighlight][ColFg] = strdup(xval.addr);
 		#endif // HIGHLIGHT_PATCH | FUZZYHIGHLIGHT_PATCH
 		#if HIGHPRIORITY_PATCH
